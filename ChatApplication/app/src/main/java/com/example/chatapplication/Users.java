@@ -14,5 +14,6 @@ public class Users {
         this.password = password;
         this.profilepic = profilepic;
         this.status = status;
+
     }
 }
