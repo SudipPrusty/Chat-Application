@@ -6,6 +6,15 @@ public class msgModelclass {
     String Senderid;
     long timeStamp;
 
+    public msgModelclass() {
+    }
+
+    public msgModelclass(String messsage, String senderid, long timeStamp) {
+        this.messsage = messsage;
+        Senderid = senderid;
+        this.timeStamp = timeStamp;
+    }
+
     public String getMesssage() {
         return messsage;
     }
