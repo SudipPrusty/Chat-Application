@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +21,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, login.class);
             startActivity(intent);
         }
-
     }
 }
