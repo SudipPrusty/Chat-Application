@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/two"
     tools:context=".registration">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilerg0"
         android:layout_width="151dp"
@@ -24,7 +25,7 @@
         android:layout_height="@dimen/_35sdp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_vertical"
-        android:text="Create New "
+        android:text="@string/create_new"
         android:textColor="@color/white"
         android:textSize="@dimen/_26sdp"
         android:textStyle="bold"
@@ -41,7 +42,7 @@
         android:layout_height="41dp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_vertical"
-        android:text="Account"
+        android:text="@string/account"
         android:textColor="@color/white"
         android:textSize="@dimen/_26sdp"
         android:textStyle="bold"
@@ -215,5 +216,6 @@
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
