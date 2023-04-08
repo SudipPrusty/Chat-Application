@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/two"
     tools:context=".registration">
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilerg0"
         android:layout_width="151dp"
@@ -24,7 +25,7 @@
         android:layout_height="@dimen/_35sdp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_vertical"
-        android:text="Create New "
+        android:text="@string/create_new"
         android:textColor="@color/white"
         android:textSize="@dimen/_26sdp"
         android:textStyle="bold"
@@ -41,7 +42,7 @@
         android:layout_height="41dp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_vertical"
-        android:text="Account"
+        android:text="@string/account"
         android:textColor="@color/white"
         android:textSize="@dimen/_26sdp"
         android:textStyle="bold"
@@ -75,7 +76,7 @@
         android:layout_height="52dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_vertical"
-        android:text="EMAIL"
+        android:text="@string/email"
         android:textColor="@color/black"
         android:textSize="@dimen/_13sdp"
         android:textStyle="bold"
@@ -92,7 +93,7 @@
         android:layout_height="52dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_vertical"
-        android:text="PASSWORD"
+        android:text="@string/password"
         android:textColor="@color/black"
         android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
@@ -110,7 +111,7 @@
         android:layout_height="52dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_vertical"
-        android:text="RE-ENTER PASSWORD"
+        android:text="@string/re_enter_password"
         android:textColor="@color/black"
         android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
@@ -129,6 +130,7 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
+        android:textColorHint="#78909C"
         android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -136,7 +138,8 @@
         app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.572"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/rgpassword"
@@ -146,6 +149,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/black"
+        android:textColorHint="#78909C"
         android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -153,7 +157,9 @@
         app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.675"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/rgrepassword"
@@ -163,6 +169,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/black"
+        android:textColorHint="#78909C"
         android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -170,14 +177,15 @@
         app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.777"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/signupbutton"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_45sdp"
         android:backgroundTint="@color/black"
-        android:text="signup"
+        android:text="@string/signup"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -191,7 +199,7 @@
         android:layout_width="@dimen/_124sdp"
         android:layout_height="24dp"
         android:gravity="center"
-        android:text="Login!"
+        android:text="@string/login"
         android:textColor="@color/black"
         android:textStyle="bold"
 
@@ -206,14 +214,17 @@
         android:layout_width="260dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="UserName"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:text=""
+        android:textColorHint="#78909C"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462" />
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>
