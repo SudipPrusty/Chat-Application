@@ -19,5 +19,23 @@
         app:layout_constraintVertical_bias="0.154"
         app:srcCompat="@drawable/logo" />
 
- 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="296dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Sign in to continue."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+  
 </androidx.constraintlayout.widget.ConstraintLayout>
