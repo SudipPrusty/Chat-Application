@@ -33,7 +33,6 @@ public class login extends AppCompatActivity {
         email = findViewById(R.id.editTextLogEmail);
         password = findViewById(R.id.editTextLogPassword);
 
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,10 +65,7 @@ public class login extends AppCompatActivity {
                             }
                         }
                     });
-
                 }
-
-
             }
         });
     }

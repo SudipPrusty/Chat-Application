@@ -53,8 +53,6 @@ public class registration extends AppCompatActivity {
         rg_profileImg = findViewById(R.id.profilerg0);
         rg_signup = findViewById(R.id.signupbutton);
 
-
-
         loginbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
