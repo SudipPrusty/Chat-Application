@@ -20,23 +20,6 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="@dimen/_233sdp"
-        android:layout_height="@dimen/_127sdp"
-        android:fontFamily="@font/poppins_regular"
-        android:gravity="center"
-        android:text="Login"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_62sdp"
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
-
-    <TextView
         android:id="@+id/textView9"
         android:layout_width="296dp"
         android:layout_height="46dp"
@@ -52,7 +35,24 @@
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/_233sdp"
+        android:layout_height="@dimen/_127sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_62sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
 
     <TextView
         android:id="@+id/textView11"
