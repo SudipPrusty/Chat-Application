@@ -42,7 +42,10 @@ public class registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         getSupportActionBar().hide();
-        loginbut = findViewById(R.id.signupbutton);
+        database = FirebaseDatabase.getInstance();
+        storage = FirebaseStorage.getInstance();
+        auth = FirebaseAuth.getInstance();
+        loginbut = findViewById(R.id.loginbut);
         rg_username = findViewById(R.id.rgusername);
         rg_email = findViewById(R.id.rgemail);
         rg_password = findViewById(R.id.rgpassword);
