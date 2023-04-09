@@ -228,6 +228,7 @@
         android:ems="10"
         android:hint="UserName"
         android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
