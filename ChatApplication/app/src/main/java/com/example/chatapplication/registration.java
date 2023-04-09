@@ -132,7 +132,6 @@ public class registration extends AppCompatActivity {
                                             }else {
                                                 Toast.makeText(registration.this, "Error In Creating The User", Toast.LENGTH_SHORT).show();
                                             }
-
                                         }
                                     });
                                 }
