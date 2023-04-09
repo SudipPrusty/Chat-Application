@@ -132,6 +132,7 @@
         android:text="Login"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.581"
@@ -143,15 +144,15 @@
         android:id="@+id/textView13"
         android:layout_width="@dimen/_118sdp"
         android:layout_height="@dimen/_24sdp"
+        android:gravity="center"
         android:text="Need an account?"
         android:textColor="@color/black"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <TextView
         android:id="@+id/textView14"
@@ -159,12 +160,12 @@
         android:layout_height="@dimen/_24sdp"
         android:gravity="center"
         android:text="SIGN UP!"
-        android:textStyle="bold"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988" />
+        app:layout_constraintVertical_bias="0.964" />
 </androidx.constraintlayout.widget.ConstraintLayout>
