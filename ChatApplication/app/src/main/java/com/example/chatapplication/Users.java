@@ -3,61 +3,75 @@ package com.example.chatapplication;
 public class Users {
         String profilepic,mail,userName,password,userId,lastMessage,status;
 
-    public Users(){}
+    public Users(String id, String namee, String emaill, String password, String cPassword, String imageuri){}
 
-    public String getProfilepic() {
+    public String getProfilepic()
+    {
         return profilepic;
     }
 
-    public void setProfilepic(String profilepic) {
+    public void setProfilepic(String profilepic)
+    {
         this.profilepic = profilepic;
     }
 
-    public String getMail() {
+    public String getMail()
+    {
         return mail;
     }
 
-    public void setMail(String mail) {
+    public void setMail(String mail)
+    {
         this.mail = mail;
     }
 
-    public String getUserName() {
+    public String getUserName()
+    {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(String userName)
+    {
         this.userName = userName;
     }
 
-    public String getPassword() {
+    public String getPassword()
+    {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(String password)
+    {
         this.password = password;
     }
 
-    public String getUserId() {
+    public String getUserId()
+    {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(String userId)
+    {
         this.userId = userId;
     }
 
-    public String getLastMessage() {
+    public String getLastMessage()
+    {
         return lastMessage;
     }
 
-    public void setLastMessage(String lastMessage) {
+    public void setLastMessage(String lastMessage)
+    {
         this.lastMessage = lastMessage;
     }
 
-    public String getStatus() {
+    public String getStatus()
+    {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(String status)
+    {
         this.status = status;
     }
 }
