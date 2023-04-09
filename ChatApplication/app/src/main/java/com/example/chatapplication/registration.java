@@ -1,4 +1,5 @@
 package com.example.chatapplication;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -24,18 +26,20 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+
 public class registration extends AppCompatActivity {
     TextView loginbut;
     EditText rg_username, rg_email, rg_password, rg_repassword;
     Button rg_signup;
     CircleImageView rg_profileImg;
-
     FirebaseAuth auth;
     Uri imageURI;
     String imageuri;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     FirebaseDatabase database;
     FirebaseStorage storage;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +85,7 @@ public class registration extends AppCompatActivity {
                 }else if (!Password.equals(cPassword)){
                     rg_repassword.setError("The Password Does'nt Match");
                 }else {
-                    auth.createUserWithEmailAndPassword(emaill, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    auth.createUserWithEmailAndPassword(emaill,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
@@ -98,8 +102,7 @@ public class registration extends AppCompatActivity {
                                                     @Override
                                                     public void onSuccess(Uri uri) {
                                                         imageuri = uri.toString();
-                                                        Users users = new Users(id,namee,emaill,Password,cPassword
-                                                        ,imageuri);
+                                                        Users users = new Users(id,namee,emaill,Password,imageuri,status);
                                                         reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
@@ -152,7 +155,7 @@ public class registration extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,"Select Pictur"),10);
+                startActivityForResult(Intent.createChooser(intent,"Select Picture"),10);
 
             }
         });
