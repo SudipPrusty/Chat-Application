@@ -9,8 +9,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.chatapplication.R.id;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,6 +23,7 @@ public class login extends AppCompatActivity {
     EditText email, password;
     FirebaseAuth auth;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    TextView login_signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,16 @@ public class login extends AppCompatActivity {
         button = findViewById(R.id.Logbutton);
         email = findViewById(R.id.editTextLogEmail);
         password = findViewById(R.id.editTextLogPassword);
+        login_signup = findViewById(R.id.signup);
+
+        login_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this,registration.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
