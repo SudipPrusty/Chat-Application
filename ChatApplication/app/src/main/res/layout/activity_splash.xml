@@ -8,7 +8,7 @@
     tools:context=".Splash">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoimg"
         android:layout_width="@dimen/_180sdp"
         android:layout_height="@dimen/_80sdp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logonameimg"
         android:layout_width="@dimen/_370sdp"
         android:layout_height="@dimen/_99sdp"
         android:fontFamily="@font/apptext"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.438" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/ownone"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_25sdp"
         android:fontFamily="@font/poppins_bold"
