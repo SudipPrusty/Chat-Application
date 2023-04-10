@@ -83,7 +83,7 @@ public class registration extends AppCompatActivity {
                 }else if (Password.length()<6){
                     rg_password.setError("Password Must Be Six Characters Or More");
                 }else if (!Password.equals(cPassword)){
-                    rg_repassword.setError("The Password Does'nt Match");
+                    rg_repassword.setError("Password Doesn't Match");
                 }else {
                     auth.createUserWithEmailAndPassword(emaill,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -111,7 +111,7 @@ public class registration extends AppCompatActivity {
                                                                     startActivity(intent);
                                                                     finish();
                                                                 }else {
-                                                                    Toast.makeText(registration.this, "Error In Creating The User", Toast.LENGTH_SHORT).show();
+                                                                    Toast.makeText(registration.this, "Error In creating the user", Toast.LENGTH_SHORT).show();
                                                                 }
 
                                                             }
@@ -122,7 +122,7 @@ public class registration extends AppCompatActivity {
                                         }
                                     });
                                 }else{
-                                    String status= "Hey i'M Using This Apllication";
+                                    String status= "Hey I'm using this application";
                                     imageuri = "https://firebasestorage.googleapis.com/v0/b/chat-application-74201.appspot.com/o/man.png?alt=media&token=d83a924e-1442-48f2-a431-954e4e909bef";
                                     Users users = new Users(id,namee,emaill,Password,imageuri,status);
                                     reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -133,7 +133,7 @@ public class registration extends AppCompatActivity {
                                                 startActivity(intent);
                                                 finish();
                                             }else {
-                                                Toast.makeText(registration.this, "Error In Creating The User", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(registration.this, "Error In creating the user", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
@@ -154,8 +154,7 @@ public class registration extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,"Select Picture"),10);
-
+                startActivityForResult(Intent.createChooser(intent,"Select a picture"),10);
             }
         });
     }
