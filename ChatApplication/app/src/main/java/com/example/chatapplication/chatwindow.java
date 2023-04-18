@@ -6,9 +6,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -22,9 +25,16 @@ public class chatwindow extends AppCompatActivity {
     public  static String reciverIImg;
     CardView sendbtn;
     EditText textmsg;
+    String senderRoom,reciverRoom;
+    RecyclerView messageAdpter;
+    ArrayList<msgModelclass> messagesArrayList;
+    messagesAdpter mmessagesAdpter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatwindow);
+
+        
+
     }
 }
