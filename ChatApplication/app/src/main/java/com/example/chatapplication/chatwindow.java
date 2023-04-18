@@ -55,7 +55,7 @@ public class chatwindow extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
         messageAdpter.setLayoutManager(linearLayoutManager);
-        mmessagesAdpter = new messagesAdpter(chatwindo.this,messagesArrayList);
+        mmessagesAdpter = new MessageAdapter(chatwindow.this,messagesArrayList);
         messageAdpter.setAdapter(mmessagesAdpter);
 
     }
