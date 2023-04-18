@@ -1,14 +1,12 @@
 package com.example.chatapplication;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +21,9 @@ public class MessageAdapter extends RecyclerView.Adapter {
     ArrayList<msgModelclass> messageAdpaterArrayList;
     int ITEM_SEND=1;
     int ITEM_RECEIVE=2;
+
+    public MessageAdapter(chatwindow chatwindow, ArrayList<msgModelclass> messagesArrayList) {
+    }
 
     @NonNull
     @Override
