@@ -39,3 +39,25 @@
             android:textSize="@dimen/_15sdp"
             android:layout_margin="@dimen/_10sdp"/>
     </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgadpter"
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="-7dp"
+        android:padding="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:orientation="horizontal">
+
+        
