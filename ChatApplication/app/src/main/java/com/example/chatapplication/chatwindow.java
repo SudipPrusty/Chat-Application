@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -42,6 +43,20 @@ public class chatwindow extends AppCompatActivity {
         reciverimg = getIntent().getStringExtra("reciverImg");
         reciverUid = getIntent().getStringExtra("uid");
 
+
+
+        messagesArrayList = new ArrayList<>();
+
+        sendbtn = findViewById(R.id.sendbtnn);
+        textmsg = findViewById(R.id.textmsg);
+        reciverNName = findViewById(R.id.recivername);
+        profile = findViewById(R.id.profileimgg);
+        messageAdpter = findViewById(R.id.msgadpter);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setStackFromEnd(true);
+        messageAdpter.setLayoutManager(linearLayoutManager);
+        mmessagesAdpter = new messagesAdpter(chatwindo.this,messagesArrayList);
+        messageAdpter.setAdapter(mmessagesAdpter);
 
     }
 }
