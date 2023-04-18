@@ -60,4 +60,23 @@
         android:layout_marginBottom="@dimen/_2sdp"
         android:orientation="horizontal">
 
-        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_25sdp">
+
+            <EditText
+                android:id="@+id/textmsg"
+                android:layout_width="338dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type The Messages..."
+                android:paddingStart="13.00dp" />
