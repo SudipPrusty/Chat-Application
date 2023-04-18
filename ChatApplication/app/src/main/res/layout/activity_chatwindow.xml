@@ -13,4 +13,17 @@
         android:id="@+id/ll1"
         android:gravity="center">
 
-        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimgg"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/photocamera"
+            app:civ_border_color="@color/white"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:civ_border_width="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.226" />
+
