@@ -43,7 +43,7 @@
         android:id="@+id/msgadpter"
         android:layout_width="match_parent"
         android:layout_height="502dp"
-
+        android:layout_above="@id/ll2"
         android:layout_below="@+id/ll1"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="-7dp"
