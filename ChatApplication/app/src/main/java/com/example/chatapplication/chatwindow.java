@@ -28,13 +28,13 @@ public class chatwindow extends AppCompatActivity {
     String senderRoom,reciverRoom;
     RecyclerView messageAdpter;
     ArrayList<msgModelclass> messagesArrayList;
-    messagesAdpter mmessagesAdpter;
+    MessageAdapter mmessagesAdpter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatwindow);
 
-        
+
 
     }
 }
