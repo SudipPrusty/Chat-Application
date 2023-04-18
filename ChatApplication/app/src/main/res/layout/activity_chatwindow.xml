@@ -27,3 +27,15 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.226" />
 
+
+        <TextView
+            android:id="@+id/recivername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chiranjeeb Garnayak"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_10sdp"/>
+    </LinearLayout>
