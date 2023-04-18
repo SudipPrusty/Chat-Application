@@ -34,6 +34,13 @@ public class chatwindow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatwindow);
 
+        getSupportActionBar().hide();
+        database = FirebaseDatabase.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        reciverName = getIntent().getStringExtra("nameeee");
+        reciverimg = getIntent().getStringExtra("reciverImg");
+        reciverUid = getIntent().getStringExtra("uid");
 
 
     }
