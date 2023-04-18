@@ -4,33 +4,32 @@
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/pro"
+        android:id="@+id/profilerggg"
         android:layout_width="@dimen/_25sdp"
         android:layout_height="@dimen/_25sdp"
-        android:layout_alignParentLeft="true"
+        android:src="@drawable/photocamera"
         android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:src="@drawable/photocamera" />
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        />
 
     <TextView
-        android:id="@+id/recivertextset"
+        android:id="@+id/msgsendertyp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
         android:layout_marginBottom="@dimen/_5sdp"
-        android:layout_toRightOf="@id/pro"
-        android:background="@drawable/receiver_shape"
+        android:layout_toLeftOf="@id/profilerggg"
+        android:background="@drawable/sender_shape"
         android:fontFamily="@font/poppins_regular"
         android:padding="@dimen/_7sdp"
         android:text="aysuhvish"
         android:textColor="@color/black"
         android:textStyle="bold" />
+
 
 
 </RelativeLayout>
