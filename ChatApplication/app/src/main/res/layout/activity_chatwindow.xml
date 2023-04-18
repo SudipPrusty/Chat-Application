@@ -91,3 +91,17 @@
             android:layout_marginEnd="@dimen/_5sdp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="@dimen/_25sdp">
+
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/sendbut" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
