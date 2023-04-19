@@ -20,16 +20,15 @@
                 android:value="" />
         </activity>
         <activity
-<<<<<<< Updated upstream
-            android:name=".chatwindow"
+
+            android:name=".chatwindo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-=======
->>>>>>> Stashed changes
+
             android:name=".registration"
             android:exported="false">
             <meta-data

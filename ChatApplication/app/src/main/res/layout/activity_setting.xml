@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -48,7 +48,8 @@
         app:layout_constraintVertical_bias="0.666" />
 
     <Button
-        android:id="@+id/donebut"
+        android:id="@+id/donebutt"
+        android:backgroundTint="@color/black"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_35sdp"
         android:text="Save"
