@@ -3,6 +3,7 @@ package com.example.chatapplication;
 
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,9 +38,10 @@ public class chatwindow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatwindow);
-
-
         getSupportActionBar().hide();
+
+
+
         database = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -57,6 +59,7 @@ public class chatwindow extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
         messageAdpter.setLayoutManager(linearLayoutManager);
+
         mmessagesAdpter = new MessageAdapter(chatwindow.this,messagesArrayList);
         messageAdpter.setAdapter(mmessagesAdpter);
 

@@ -1,5 +1,8 @@
 package com.example.chatapplication;
 
+import static com.example.chatapplication.chatwindow.reciverIImg;
+import static com.example.chatapplication.chatwindow.senderImg;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -21,6 +25,11 @@ public class MessageAdapter extends RecyclerView.Adapter {
     ArrayList<msgModelclass> messageAdpaterArrayList;
     int ITEM_SEND=1;
     int ITEM_RECEIVE=2;
+
+    public MessageAdapter(Context context, ArrayList<msgModelclass> messageAdpaterArrayList) {
+        this.context = context;
+        this.messageAdpaterArrayList = messageAdpaterArrayList;
+    }
 
     public MessageAdapter(chatwindow chatwindow, ArrayList<msgModelclass> messagesArrayList) {
     }
@@ -46,11 +55,13 @@ public class MessageAdapter extends RecyclerView.Adapter {
         {
             senderViewHolder viewholder = (senderViewHolder) holder;
             viewholder.msgtxt.setText(messages.getMesssage());
+            Picasso.get().load(senderImg).into(viewholder.circleImageView);
 
         }
         else{
             receiverviewHolder viewHolder = (receiverviewHolder) holder;
             viewHolder.msgtxt.setText(messages.getMesssage());
+            Picasso.get().load(reciverIImg).into(viewHolder.circleImageView);
         }
     }
 
