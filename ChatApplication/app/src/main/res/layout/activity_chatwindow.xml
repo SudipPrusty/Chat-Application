@@ -31,7 +31,7 @@
             android:id="@+id/recivername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ayushvishwakarma"
+            android:text="Let's Chat"
             android:gravity="center"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_regular"
@@ -79,6 +79,7 @@
                 android:background="@null"
                 android:fontFamily="@font/poppins_regular"
                 android:hint="Type The Messages..."
+                android:textColorHint="@color/black"
                 android:paddingStart="13.00dp" />
 
         </androidx.cardview.widget.CardView>
@@ -97,9 +98,7 @@
                 android:layout_height="@dimen/_15sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/sendbut" />
-
         </androidx.cardview.widget.CardView>
-
 
     </LinearLayout>
 
