@@ -28,7 +28,7 @@
         android:background="@drawable/receiver_shape"
         android:fontFamily="@font/poppins_regular"
         android:padding="@dimen/_7sdp"
-        android:text="aysuhvish"
+        android:text="Hey"
         android:textColor="@color/black"
         android:textStyle="bold" />
 
